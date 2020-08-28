@@ -16,6 +16,7 @@ library(rstan)
 library(Cairo)
 library(data.table)
 library(viridis)
+library(tidyquant)
 
 # Turn off scientific notation
 
