@@ -17,6 +17,7 @@ library(Cairo)
 library(data.table)
 library(viridis)
 library(tidyquant)
+library(forecast)
 
 # Turn off scientific notation
 
