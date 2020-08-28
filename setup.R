@@ -15,6 +15,7 @@ library(janitor)
 library(rstan)
 library(Cairo)
 library(data.table)
+library(viridis)
 
 # Turn off scientific notation
 
