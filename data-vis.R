@@ -12,7 +12,7 @@
 
 #---------------------- COLLECT TRENDS DATA ------------------------
 
-the_trends <- as.data.frame(gtrends(c("depression", "psychologist", "anxiety", "mental health"), 
+the_trends <- as.data.frame(gtrends(c("depression", "psychologist", "anxiety", "mental health", "therapist"), 
                                     geo = c("AU"), gprop = "web", time = "all", onlyInterest = TRUE)) %>%
   clean_names()
 
@@ -20,7 +20,7 @@ the_trends <- as.data.frame(gtrends(c("depression", "psychologist", "anxiety", "
 
 # Define vector of colours for plot
 
-the_palette <- c("#75E6DA", "#FD62AD", "#05445E", "#FEB06A")
+the_palette <- c("#75E6DA", "#FD62AD", "#05445E", "#FEB06A", "#E7625F")
 
 # Make plot
 
