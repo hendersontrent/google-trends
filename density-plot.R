@@ -54,11 +54,15 @@ p <- trends_clean %>%
   labs(title = "Distribution of interest scores by time of year",
        subtitle = paste0("Data collected ", format(Sys.Date(), "%d %B %Y"), ". Data is at the monthly level."),
        x = "Interest Score",
-       y = "Density") +
+       y = "Density",
+       fill = "Time of Year") +
   theme_bw() +
   scale_fill_manual(values = the_palette) +
   theme(legend.position = "bottom",
-        panel.grid.minor = element_blank())
+        panel.grid.minor = element_blank(),
+        strip.background = element_rect(fill = "#05445E"),
+        strip.text = element_text(colour = "white", face = "bold")) +
+  facet_wrap(~interest_over_time_keyword)
 print(p)
 
 #---------------------- EXPORTS ------------------------------------
